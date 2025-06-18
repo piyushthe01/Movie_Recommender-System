@@ -22,6 +22,21 @@ A content-based movie recommender app built with **Python**, **Streamlit**, and 
 
 ---
 
+## 🧠 NLP Techniques Used
+
+- **TF-IDF Vectorization**: Transforms movie overviews and metadata into numerical feature vectors.
+- **Cosine Similarity**: Measures closeness between movie vectors for recommendation ranking.
+- **Porter Stemmer**: Reduces words to their root forms during preprocessing to improve text matching.
+
+---
+
+- **Python** (Pandas, Scikit-learn)
+- **Streamlit** (UI)
+- **Requests** (API calls)
+- **Pickle** (data serialization)
+
+---
+
 ## 📂 Dataset
 
 This project uses the **TMDB 5000 Movies Dataset** from Kaggle:  
@@ -113,5 +128,6 @@ Register at [OMDb API](https://www.omdbapi.com/apikey.aspx) for a free key and r
 
 ---
 
-Made with ❤️ by [Your Name]  
+Made with ❤️ by Piyush Mishra  
+📧 piyushmishra27j@gmail.com  
 🌐 [linkedin.com/in/mishrapm](https://linkedin.com/in/mishrapm)
