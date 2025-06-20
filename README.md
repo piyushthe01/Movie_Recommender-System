@@ -4,6 +4,12 @@ A content-based movie recommender app built with **Python**, **Streamlit**, and 
 
 ---
 
+## 🚀 Live Demo
+
+🔗 Try the app here: [https://huggingface.co/spaces/astroguy07/movie-rs-pm](https://huggingface.co/spaces/astroguy07/movie-rs-pm)
+
+---
+
 ## 📌 Features
 
 - Recommend top N similar movies based on cosine similarity.  
@@ -30,13 +36,6 @@ A content-based movie recommender app built with **Python**, **Streamlit**, and 
 
 ---
 
-- **Python** (Pandas, Scikit-learn)
-- **Streamlit** (UI)
-- **Requests** (API calls)
-- **Pickle** (data serialization)
-
----
-
 ## 📂 Dataset
 
 This project uses the **TMDB 5000 Movies Dataset** from Kaggle:  
@@ -49,14 +48,13 @@ If you'd like to recreate or modify the data pipeline, please refer to that note
 
 ## 📂 Repository Structure
 
-```
-├── app.py                   # Streamlit entry point
-├── movies.pkl               # Movie metadata (use Git LFS or external storage)
-├── similarity.pkl           # Precomputed similarity matrix (use Git LFS or external storage)
-├── movie-recommender-system.ipynb  # Notebook for data prep
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
-```
+├── app.py # Streamlit entry point
+├── movies.pkl # Movie metadata (use Git LFS or external storage)
+├── similarity.pkl # Precomputed similarity matrix (use Git LFS or external storage)
+├── movie-recommender-system.ipynb # Notebook for data prep
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+
 
 ---
 
@@ -97,37 +95,29 @@ Since `movies.pkl` and `similarity.pkl` exceed GitHub’s 25 MB limit, choose 
    ```bash
    git clone https://github.com/yourusername/movie-recommender-system.git
    cd movie-recommender-system
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Set up large data files** using Git LFS or external storage (see above).
-4. Add your OMDb API key in `app.py`:
-   ```python
-   OMDB_API_KEY = "YOUR_OMDB_KEY"
-   ```
-5. Run the app:
-   ```bash
-   streamlit run app.py
-   ```
+Install dependencies:
 
----
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Set up large data files using Git LFS or external storage (see above).
 
-## 📬 Get OMDb API Key
+Add your OMDb API key in app.py:
+OMDB_API_KEY = "YOUR_OMDB_KEY"
+streamlit run app.py
+📬 Get OMDb API Key
+Register at OMDb API for a free key and replace the placeholder in app.py.
 
-Register at [OMDb API](https://www.omdbapi.com/apikey.aspx) for a free key and replace the placeholder in `app.py`.
+✨ Future Improvements
+Deploy on Streamlit Cloud with secret management.
 
----
+Add genre and year filters.
 
-## ✨ Future Improvements
+Enhance similarity using NLP embeddings (TF-IDF, BERT).
 
-- Deploy on Streamlit Cloud with secret management.  
-- Add genre and year filters.  
-- Enhance similarity using NLP embeddings (TF-IDF, BERT).  
+Made with ❤️ by Piyush Mishra
+📧 piyushmishra27j@gmail.com
+🌐 linkedin.com/in/mishrapm
 
----
 
-Made with ❤️ by Piyush Mishra  
-📧 piyushmishra27j@gmail.com  
-🌐 [linkedin.com/in/mishrapm](https://linkedin.com/in/mishrapm)
